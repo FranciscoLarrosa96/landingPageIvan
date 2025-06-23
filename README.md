@@ -51,6 +51,9 @@ ng add angular-cli-ghpages
 # Build para producción
 ng build --configuration production --base-href "/landingPageIvan/"
 
+# Con nuevo dominio 
+ng build --configuration production --base-href "/"
+
 # Hacer deploy
 npx angular-cli-ghpages --dir=dist/ivan-page/browser/
 ```
