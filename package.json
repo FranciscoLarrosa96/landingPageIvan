@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "npx angular-cli-ghpages --dir=dist/ivan-page"
+    "deploy": "npx angular-cli-ghpages --dir=dist/ivan-page/browser"
   },
   "private": true,
   "dependencies": {

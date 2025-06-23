@@ -5,7 +5,7 @@
   transition: all 0.3s ease-in-out;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
   padding-block: 0.5rem;
-  padding-inline: 1.25rem;
+  padding-inline: 0.5rem;
   background-color: rgb(0 107 179);
   border-radius: 9999px;
   display: flex;
@@ -32,9 +32,6 @@
   border-color: #fff9;
 }
 
-.button:hover .icon {
-  transform: translate(4px);
-}
 
 .button:hover::before {
   animation: shine 1.5s ease-out infinite;
@@ -86,5 +83,19 @@
 .title {
   @include mobile {
     height: 170px !important;
+  }
+}
+
+.linkWhatsapp{
+  @include mobile {
+    bottom: 10px;
+    right: 10px;
+  }
+}
+
+@media (max-width: 321px) {
+  .linkWhatsapp{
+    bottom: 150px;
+    right: 5px;
   }
 }
