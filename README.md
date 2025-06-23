@@ -52,7 +52,7 @@ ng add angular-cli-ghpages
 ng build --configuration production --base-href "/landingPageIvan/"
 
 # Hacer deploy
-npx angular-cli-ghpages --dir=dist/ivan-page
+npx angular-cli-ghpages --dir=dist/ivan-page/browser/
 ```
 
 Esto genera la build en `dist/ivan-page` y la sube al branch `gh-pages`.
