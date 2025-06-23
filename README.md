@@ -84,8 +84,8 @@ La galería de trabajos reales está implementada con [LightGallery](https://www
 
 ## 💬 Contacto
 
-Proyecto creado con ❤️ para **Iván**, el mejor reparador de PCs de la zona.  
-Frontend por [TuNombreDev].
+Proyecto creado para **Iván**, el mejor reparador de PCs de la zona.  
+Frontend por Francisco Larrosa.
 
 ---
 
