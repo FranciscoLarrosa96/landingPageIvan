@@ -1,0 +1,31 @@
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.dev/guide/theming
+@use '@angular/material' as mat;
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+html,
+body {
+    height: 100%;
+}
+
+
+
+body {
+  font-family: 'Rajdhani', sans-serif;
+}
+
+
+:root {
+  --main-color: #0074e4; /* Azul principal, confiable y tecnológico */
+  --secondary-color: #0f172a; /* Azul oscuro grisáceo, elegante y serio */
+  --background-color: #f1f5f9; /* Gris azulado muy claro, moderno */
+  --text-color: #1e293b; /* Gris oscuro, bien legible */
+  --border-color: #cbd5e1; /* Borde suave, sin ser blanco */
+  --hover-color: #005bb5; /* Azul más fuerte para hover */
+}
