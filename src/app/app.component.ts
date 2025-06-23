@@ -31,6 +31,15 @@ export class AppComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit(): void {
     this.initGallery();
+    const video = document.querySelector('.videoBg') as HTMLVideoElement;
+    const playVideo = () => {
+      video.play().catch(() => console.log('🛑 No se pudo reproducir'));
+    };
+
+    // Solo se ejecuta una vez al interactuar
+    ['click', 'touchstart', 'scroll'].forEach((event) =>
+      window.addEventListener(event, playVideo, { once: true })
+    );
   }
 
   toggleVerMas(): void {

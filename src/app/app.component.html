@@ -2,10 +2,12 @@
 
   <header class="relative text-white text-center">
     <!-- 🎥 Video de fondo -->
-    <video autoplay muted loop playsinline class="videoBg inset-0 w-full object-cover z-0 h-[100px]">
+    <video autoplay muted loop playsinline webkit-playsinline preload="auto"
+      class="videoBg inset-0 w-full object-cover z-0 h-[100px]">
       <source src="assets/videos/hero-bg2.mp4" type="video/mp4" />
       Tu navegador no soporta video HTML5.
     </video>
+
 
     <!-- 🌟 Contenido encima del video -->
     <div class="title absolute inset-0 flex flex-col items-center justify-center h-[100px] z-10">
