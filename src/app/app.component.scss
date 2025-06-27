@@ -66,25 +66,9 @@
 }
 
 .videoBg {
-  height: 100px !important;
+  height: 200px !important;
 }
 
-.title {
-  >h1 {
-    font-size: clamp(2rem, 6vw, 3rem);
-  }
-
-  >p {
-    font-size: clamp(1rem, 3vw, 1.2rem);
-  }
-}
-
-.videoBg,
-.title {
-  @include mobile {
-    height: 170px !important;
-  }
-}
 
 .linkWhatsapp{
   @include mobile {

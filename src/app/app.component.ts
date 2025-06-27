@@ -1,5 +1,4 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
-import { MatTooltipModule } from '@angular/material/tooltip';
 import * as AOS from 'aos';
 import lightGallery from 'lightgallery';
 import lgZoom from 'lightgallery/plugins/zoom';
@@ -7,7 +6,7 @@ import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-root',
-  imports: [MatTooltipModule, CommonModule],
+  imports: [CommonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
