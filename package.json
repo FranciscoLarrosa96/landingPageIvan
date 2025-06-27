@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "build-prod": "ng build --configuration production --base-href \"/\"",
-    "postbuild-prod": "copy CNAME dist\\ivan-page\\browser\\",
+    "postbuild-prod": "copy CNAME dist\\ivan-page\\browser\\ && copy sitemap.xml dist\\ivan-page\\browser\\ && copy robots.txt dist\\ivan-page\\browser\\",
     "deploy": "npx angular-cli-ghpages --dir=dist/ivan-page/browser"
   },
   "private": true,
