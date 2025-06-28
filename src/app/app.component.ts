@@ -29,17 +29,15 @@ export class AppComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit(): void {
-    this.initGallery();
-    const video = document.querySelector('.videoBg') as HTMLVideoElement;
-    const playVideo = () => {
-      video.play().catch(() => console.log('🛑 No se pudo reproducir'));
-    };
-
-    // Solo se ejecuta una vez al interactuar
-    ['click', 'touchstart', 'scroll'].forEach((event) =>
-      window.addEventListener(event, playVideo, { once: true })
-    );
+    setTimeout(() => {
+      const video = document.querySelector('.videoBg') as HTMLVideoElement;
+      if (video) {
+        video.muted = true;
+        video.play().catch(() => console.log('🛑 No se pudo reproducir'));
+      }
+    }, 500);
   }
+
 
   toggleVerMas(): void {
     this.mostrarTodas = !this.mostrarTodas;
